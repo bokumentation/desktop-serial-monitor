@@ -4,9 +4,9 @@ Use QT framework. Tested on Debian 13.
 
 A cross-platform Qt6 serial monitor for ESP32-C3 with colored log output and real-time plotting.
 
-[![Ubuntu](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg?job=ubuntu-build)](https://github.com/USER/REPO/actions/workflows/ci.yml)
-[![macOS](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg?job=macos-build)](https://github.com/USER/REPO/actions/workflows/ci.yml)
-[![Windows](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg?job=windows-build)](https://github.com/USER/REPO/actions/workflows/ci.yml)
+[![Ubuntu](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml/badge.svg?job=ubuntu-build)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml)
+[![macOS](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml/badge.svg?job=macos-build)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml)
+[![Windows](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml/badge.svg?job=windows-build)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml)
 
 ## Features
 
