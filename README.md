@@ -1,9 +1,7 @@
 # Crossplatform Desktop Serial Monitor App for my project
 
 ![Qt](https://img.shields.io/badge/Qt-6.8-green)
-[![Ubuntu](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ubuntu.yml)
-[![macOS](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/macos.yml/badge.svg)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/macos.yml)
-[![Windows](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/windows.yml/badge.svg)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/windows.yml)
+[![CI](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/bokumentation/desktop-serial-monitor/actions/workflows/ci.yml)
 
 A cross-platform Qt6 serial monitor for ESP32-C3 with colored log output and real-time plotting.
 
