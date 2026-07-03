@@ -42,8 +42,7 @@ jobs:
           host: 'windows'
           target: 'desktop'
           arch: 'win64_msvc2022_64'
-          modules: 'qt5compat qtserialport'
-          tools: 'tools_openssl_x64'
+          modules: 'qtserialport'
       - name: Configure
         run: cmake -B build -DCMAKE_BUILD_TYPE=Release
       - name: Build
