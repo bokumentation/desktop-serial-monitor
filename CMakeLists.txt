@@ -10,6 +10,7 @@ target_include_directories(appQtTest PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_link_libraries(appQtTest PRIVATE Qt6::Quick Qt6::SerialPort)
 qt_add_qml_module(appQtTest
     URI QtTest
+    VERSION 1.0
     QML_FILES qml/Main.qml
     SOURCES
         src/serialporthandler.h
