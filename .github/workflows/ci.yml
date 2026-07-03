@@ -14,7 +14,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y qt6-base-dev qt6-declarative-dev qt6-serialport-dev libxkbcommon-dev cmake g++
+          sudo apt install -y qt6-base-dev qt6-declarative-dev qt6-serialport-dev libxkbcommon-dev libgl1-mesa-dev cmake g++
       - name: Configure
         run: cmake -B build -DCMAKE_BUILD_TYPE=Release
       - name: Build

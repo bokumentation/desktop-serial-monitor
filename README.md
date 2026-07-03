@@ -33,10 +33,10 @@ Or use VSCode: **Ctrl+Shift+B** to build, **F5** to debug.
 
 Requires Docker. Outputs `appQtTest-windows/` folder with bundled DLLs.
 
-## Dependencies (Debian 13)
+## Dependencies (Debian)
 
 ```bash
-sudo apt install qt6-base-dev qt6-declarative-dev qt6-serialport-dev cmake g++
+sudo apt install qt6-base-dev qt6-declarative-dev qt6-serialport-dev libgl1-mesa-dev cmake g++
 ```
 
 Optional: `qgnomeplatform-qt6` for GNOME native look.
