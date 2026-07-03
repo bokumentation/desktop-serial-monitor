@@ -1,0 +1,44 @@
+format:
+  line_width: 100
+  tab_size: 4
+  use_tabchars: false
+  max_subgroups_hwrap: 2
+  max_pargs_hwrap: 6
+  max_rows_cmdline: 2
+  separate_ctrl_name_with_space: false
+  separate_fn_name_with_space: false
+  dangle_parens: false
+  line_ending: unix
+  keyword_case: upper
+  command_case: lower
+  always_wrap: []
+  enable_sort: true
+  autosort: true
+  require_valid_layout: false
+  layout_passes: {}
+
+parse:
+  additional_commands: {}
+  override_spec: {}
+  vartags: []
+  proptags: []
+
+lint:
+  disabled_codes: []
+  function_pattern: '[0-9a-z_]+'
+  macro_pattern: '[0-9A-Z_]+'
+  global_var_pattern: '[A-Z][0-9A-Z_]+'
+  internal_var_pattern: _[A-Z][0-9A-Z_]+
+  local_var_pattern: '[a-z][a-z0-9_]+'
+  private_var_pattern: _[0-9a-z_]+
+  public_var_pattern: '[A-Z][0-9A-Z_]+'
+  argument_var_pattern: '[a-z][a-z0-9_]+'
+  keyword_pattern: '[A-Z][0-9A-Z_]+'
+
+encode:
+  emit_byteorder_mark: false
+  input_encoding: utf-8
+  output_encoding: utf-8
+
+misc:
+  per_command: {}

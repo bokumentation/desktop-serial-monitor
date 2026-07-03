@@ -1,0 +1,40 @@
+# Build output
+build/
+build-windows/
+
+# QtCreator
+CMakeLists.txt.user
+
+# Cross-compilation deployment
+appQtTest.exe
+appQtTest-windows/
+
+# Compiled objects
+*.o
+*.obj
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# Qt auto-generated
+mocs_compilation.cpp
+moc_predefs.h
+*_autogen/
+.qmltc/
+*_qmltyperegistrations.cpp
+meta_types/
+qmltypes/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS junk
+.DS_Store
+Thumbs.db

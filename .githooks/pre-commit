@@ -1,0 +1,44 @@
+#!/bin/bash
+set -e
+
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM)
+
+if [ -z "$STAGED_FILES" ]; then
+    exit 0
+fi
+
+echo "=== Checking formatting ==="
+
+CLANG_FORMAT=$(which clang-format 2>/dev/null || true)
+FORMAT_ERR=0
+
+for FILE in $STAGED_FILES; do
+    EXT="${FILE##*.}"
+    if [ "$EXT" = "cpp" ] || [ "$EXT" = "h" ]; then
+        if [ -n "$CLANG_FORMAT" ]; then
+            DIFF=$(clang-format --style=file "$FILE" | diff -u "$FILE" - || true)
+            if [ -n "$DIFF" ]; then
+                echo "  $FILE: not formatted. Run: clang-format -i $FILE"
+                FORMAT_ERR=1
+            fi
+        fi
+
+        if grep -P '\t' "$FILE" > /dev/null 2>&1; then
+            echo "  $FILE: contains tabs. Use spaces."
+            FORMAT_ERR=1
+        fi
+    fi
+
+    if grep -P '[ \t]+$' "$FILE" > /dev/null 2>&1; then
+        echo "  $FILE: trailing whitespace."
+        FORMAT_ERR=1
+    fi
+done
+
+if [ $FORMAT_ERR -ne 0 ]; then
+    echo ""
+    echo "Commit rejected. Fix formatting issues above."
+    exit 1
+fi
+
+echo "OK"

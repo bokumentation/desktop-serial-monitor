@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.qml": "qml",
+        "*.qmltypes": "qml",
+        "qmldir": "properties",
+        "qtquickcontrols2.conf": "ini",
+        "CMakeLists.txt": "cmake"
+    },
+    "editor.rulers": [100],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "clangd.path": "/usr/bin/clangd-22"
+}

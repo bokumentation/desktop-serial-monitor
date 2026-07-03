@@ -1,0 +1,4 @@
+build/
+build-windows/
+build-windows-output/
+*.exe
